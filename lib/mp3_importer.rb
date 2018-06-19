@@ -9,7 +9,7 @@ class MP3Importer
   
   def files
     Dir.glob("#{@path}/**/*.mp3").each do |file|
-      @files << file.tr("#{@path}/","")
+      @files << file.("#{@path}/","")
     end
   end
   
