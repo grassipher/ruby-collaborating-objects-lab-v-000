@@ -26,6 +26,8 @@ class Artist
       artist_return
     else
       new_artist = Artist.new(name)
+      new_artist.save
+      new_artist
     end
   end
   
